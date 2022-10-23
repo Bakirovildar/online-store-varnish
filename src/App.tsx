@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.scss';
+import {Layout} from "./shared/Layout";
 
 function App() {
   return (
     <div className="App">
-      <h1>Азалия</h1>
+      <Layout>
+      </Layout>
     </div>
   );
 }
