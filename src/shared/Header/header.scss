@@ -1,1 +1,78 @@
-.headerContainer {}
+@import "src/base";
+.headerWrapper {
+  height: 54px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px 0;
+
+  @media (max-width: 990px) {
+    .headerNavContainer {
+      visibility: hidden;
+    }
+    .headerMenu {
+      display: block;
+
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1920px) {
+    .headerMenu {
+      display: none;
+    }
+  }
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 23px;
+    height: 100%;
+
+    .headerLogoWrapper {
+
+    }
+
+
+    .headerNavContainer {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      z-index: 10;
+
+      div {
+        padding: 0 20px;
+        cursor: pointer;
+      }
+      .navShop {
+        display: flex;
+        align-items: center;
+        background: $colorPink;
+        height: 100%;
+      }
+    }
+
+    .headerMenu {
+
+      div {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 4;
+
+        span {
+          padding-left: 5px;
+          color: #6c757d;
+        }
+      }
+    }
+  }
+
+}

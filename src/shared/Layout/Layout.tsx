@@ -4,7 +4,7 @@ interface ILayout {
   children: ReactNode
 }
 
-export function Layout<FC>({children}: ILayout) {
+export function Layout({children}: ILayout) {
   return (
       <>
         {children}
