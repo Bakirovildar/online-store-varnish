@@ -1,5 +1,6 @@
 import React from 'react';
 import './trendinghome.scss';
+import {HeaderComponent} from "../../HeaderComponent";
 
 export function TrendingHome() {
   return (
@@ -7,7 +8,8 @@ export function TrendingHome() {
           id='r1'
           className='trendingHomeContainer'
       >
-        trendingHomeContainer
+          <HeaderComponent bgText={'Trending'} text={'TRENDING'}/>
+
       </div>
   );
 }
