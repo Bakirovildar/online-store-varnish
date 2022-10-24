@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './header.scss'
 import {ShoppingCartsIcon} from "../../Icons/ShoppingCartsIcon";
 import MenuIcon from '@mui/icons-material/Menu';
+import { motion } from 'framer-motion'
 
 interface IMenu {
     id: number,
@@ -44,13 +45,25 @@ export function Header() {
                 </div>
                 {
                     isOpen
-                        ? <div className='headerMenuLi'>
+                        ? <motion.div
+                            initial={{
+                                y: -5,
+                                opacity: 0
+                            }}
+                            animate={{
+                                y: 0,
+                                opacity: 1
+                            }}
+                            transition={{
+                                delay: 0.1
+                            }}
+                            className='headerMenuLi'>
                             {menu.map(({id, title}: IMenu) => <div key={id}>{title}</div>)}
                             <div className='navShop2'>
                                 <ShoppingCartsIcon color={'white'}/>
                                 <span>[0]</span>
                             </div>
-                        </div>
+                        </motion.div>
                         : ''
                 }
 
