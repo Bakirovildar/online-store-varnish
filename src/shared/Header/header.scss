@@ -35,6 +35,7 @@
     padding: 0 15px;
     margin: 0 23px;
     height: 100%;
+    position: relative;
 
     .headerLogoWrapper {
 
@@ -56,6 +57,7 @@
         align-items: center;
         background: $colorPink;
         height: 100%;
+        color: white;
       }
     }
 
@@ -71,6 +73,31 @@
           padding-left: 5px;
           color: #6c757d;
         }
+      }
+    }
+    .headerMenuLi {
+      background: #000000;
+      position: absolute;
+      top: 54px;
+      left: -23px;
+      right: -23px;
+      height: 400px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      color: white;
+
+      .navShop2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 54px;
+        background: $colorPink;
+        width: 100%;
+        cursor: pointer;
       }
     }
   }
