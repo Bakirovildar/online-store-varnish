@@ -1,8 +1,9 @@
+@import "src/base";
 
 @media all and (min-width: 0) and (max-width: 810px) {
   .infoBannerContainer {
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 10px;
 
     .textContainer {
       margin: 0 auto;
@@ -33,7 +34,7 @@
 }
 
 .infoBannerContainer {
-  background: #f8f9fa;
+  background: $bgTrending;
   display: flex;
   justify-content: center;
 

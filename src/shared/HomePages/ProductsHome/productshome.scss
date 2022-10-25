@@ -1,0 +1,12 @@
+@import "src/base";
+
+.productsContainer {
+  background: $bgTrending;
+
+  .productsCard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+}
