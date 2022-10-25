@@ -1,0 +1,66 @@
+@import "src/base";
+
+.carouselContainer {
+  width: 100%;
+  min-height: 1073px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+
+  .carouselCard {
+    max-width: 350px;
+    max-height: 520px;
+    background: #f1b8c4;
+    margin: 0 20px;
+
+    .bgImg {
+      position: relative;
+
+      .sale {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        height: 30px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        background: $colorPink;
+      }
+
+      img {
+        width: 350px;
+        height: 520px;
+        background-size: cover;
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      margin-top: 5px;
+
+      .title {
+        text-align: left;
+        font-family: "Lato";
+        background: #fff;
+        font-size: 15px;
+        line-height: 1.8;
+        font-weight: 200;
+        margin-bottom: 5px;
+      }
+
+      .priceContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .price {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
