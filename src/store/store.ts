@@ -13,9 +13,9 @@ const initialState: RootState = {
         {id: 4, title: 'Лак база голубой UNO', price: '340', grade: 2, img: 'https://images.unsplash.com/photo-1616427592793-67b858804534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'},
     ],
     blogs: [
-        {id: 1, title: 'Even the all-powerful Pointing has no control about the blind texts', date: 'Dec 5, 2018', author: 'admin', img: 'https://images.unsplash.com/photo-1616427592793-67b858804534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'},
-        {id: 2, title: 'Even the all-powerful Pointing has no control about the blind texts', date: 'Dec 5, 2018', author: 'admin'},
-        {id: 3, title: 'Even the all-powerful Pointing has no control about the blind texts', date: 'Dec 5, 2018', author: 'admin'},
+        {id: 1, title: 'Even the all-powerful Pointing has no control about the blind texts', date: 'Dec 5, 2018', author: 'admin', img: 'https://images.unsplash.com/photo-1590736701530-f9e57920dd6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'},
+        {id: 2, title: 'Even the all-powerful Pointing has no control about the blind texts', date: 'Dec 5, 2018', author: 'admin', img: 'https://images.unsplash.com/photo-1472152123159-b189e9d193f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80'},
+        {id: 3, title: 'Even the all-powerful Pointing has no control about the blind texts', date: 'Dec 5, 2018', author: 'admin', img: 'https://images.unsplash.com/photo-1457972729786-0411a3b2b626?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'},
     ]
 }
 

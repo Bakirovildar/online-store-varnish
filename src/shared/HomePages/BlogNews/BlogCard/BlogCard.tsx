@@ -1,13 +1,24 @@
 import React from 'react';
 import './blogcard.scss';
 
-export function BlogCard() {
+interface IBlogCard {
+    blog: {
+        id: number
+        title: string
+        date: string
+        author: string
+        img: string
+    }
+}
+
+export function BlogCard({blog}: IBlogCard) {
+
   return (
       <div className='blogCard'>
-        <img src="https://images.unsplash.com/photo-1616427592793-67b858804534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt=""/>
+        <div className='img' style={{background: `no-repeat url(${blog.img})`, backgroundSize: 'cover'}}/>
         <div className='footer'>
-          <div className='footerHeader'>Lorem ipsum dolor sit amet, consecteturipsum dolor sit amet, consectetur</div>
-          <div className='footerDate'><span>Dec 6, 2018</span> <span>Admin</span></div>
+          <div className='footerHeader'>{blog.title}</div>
+          <div className='footerDate'><span>{blog.date}</span> <span>{blog.author}</span></div>
         </div>
       </div>
   );
