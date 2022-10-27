@@ -4,6 +4,7 @@ import {BannerHome} from "./BannerHome";
 import {TrendingHome} from "./TrendingHome";
 import {ProductsHome} from "./ProductsHome";
 import {BackgroundImage} from "./BackgroundImage";
+import {BlogNews} from "./BlogNews";
 
 export function HomePages() {
     return (
@@ -12,6 +13,7 @@ export function HomePages() {
             <TrendingHome/>
             <ProductsHome />
             <BackgroundImage/>
+            <BlogNews/>
         </>
     );
 }

@@ -1,0 +1,51 @@
+@media all and (min-width: 0) and (max-width: 1240px) {
+  .blogCard {
+    width: 300px;
+  }
+}
+
+@media all and (min-width: 845px) and (max-width: 1000px) {
+  .blogCard {
+    width: 250px;
+  }
+}
+
+@media all and (min-width: 0) and (max-width: 845px) {
+  .blogCard {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1240px) {
+  .blogCard {
+    width: 380px;
+  }
+}
+
+.blogCard {
+  height: 420px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+  }
+
+  .footer {
+    margin: 16px 0;
+    font-size: 20px;
+    font-family: inherit;
+    text-align: left;
+
+
+    .footerDate {
+      color: #b3b3b3;
+      font-size: 15px;
+      padding-top: 16px;
+      text-align: left;
+    }
+  }
+}
