@@ -1,31 +1,52 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './productcard.scss';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import {gradeCard} from "../../utils/gradeCard";
 
-export function ProductCard() {
-  return (
-      <div className='productCardContainer'>
-          <img src="https://images.unsplash.com/photo-1619607146034-5a05296c8f9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt=""/>
-          <div className='footer'>
-              <div className='price'>
-                  <div className='title'>Young Woman Wearing Dress</div>
-                  <div className='priceNum'>
-                      <span>$120</span>
-                      <div>
-                          <StarBorderIcon className='icon'/>
-                          <StarBorderIcon className='icon'/>
-                          <StarBorderIcon className='icon'/>
-                          <StarBorderIcon className='icon'/>
-                          <StarBorderIcon className='icon'/>
-                      </div>
-                  </div>
-              </div>
-              <div className='footerButton'>
-                  <div>ADD TO CARD +</div>
-                  <FavoriteBorderIcon className='favoriteIcon'/>
-              </div>
-          </div>
-      </div>
-  );
+export interface IProductCard {
+    id: number
+    title: string
+    price: string
+    grade: number
+    img: string
+}
+
+interface IProduct {
+    product: IProductCard
+}
+
+export function ProductCard({product}: IProduct) {
+    const [grade, setGrade]: Array<any>  = useState([])
+
+    useEffect(() => {
+        const grade: Array<number> = gradeCard(product.grade)
+        setGrade(grade)
+    },[])
+
+    return (
+        <div className='productCardContainer'>
+            <img
+                src={product.img}
+                alt=""/>
+            <div className='footer'>
+                <div className='price'>
+                    <div className='title'>{product.title}</div>
+                    <div className='priceNum'>
+                        <span>${product.price}</span>
+                        <div>
+                            {
+                                grade.map((i: number) => <StarBorderIcon className='icon'/>
+                                )
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div className='footerButton'>
+                    <div>ADD TO CARD +</div>
+                    <FavoriteBorderIcon className='favoriteIcon'/>
+                </div>
+            </div>
+        </div>
+    );
 }
