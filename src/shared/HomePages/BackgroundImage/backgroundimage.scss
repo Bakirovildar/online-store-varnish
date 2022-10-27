@@ -1,0 +1,22 @@
+.bgImageContainer {
+  height: 670px;
+  width: 100%;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .bgImageText {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    z-index: 5;
+    font-weight: 700;
+    font-size: 120px;
+    color: #fff;
+    letter-spacing: 0;
+  }
+}

@@ -3,6 +3,7 @@ import './homepages.scss';
 import {BannerHome} from "./BannerHome";
 import {TrendingHome} from "./TrendingHome";
 import {ProductsHome} from "./ProductsHome";
+import {BackgroundImage} from "./BackgroundImage";
 
 export function HomePages() {
     return (
@@ -10,6 +11,7 @@ export function HomePages() {
             <BannerHome/>
             <TrendingHome/>
             <ProductsHome />
+            <BackgroundImage/>
         </>
     );
 }
